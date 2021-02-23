@@ -1,0 +1,102 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+main {
+    width: 86%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FAFAFA;
+}
+
+h3 {
+    margin: 0;
+}
+
+.main--registration {
+    width: 35%;
+    height: 80%;
+    padding: 27px;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px 0.5px #3333331F;
+    background-color: #FFF;
+}
+
+.registration--box_img {
+    margin: 0 0 20px 0;
+}
+
+.box_img--iten {
+    width: 40%;
+}
+
+.registration--box_subtitle {}
+
+.box_subtitle--subtitle_iten {
+    color: #333333;
+}
+
+.box_subtitle--text_iten {
+    color: #1ABC9C;
+}
+
+.registration--form {
+    height: 50%;
+}
+
+.form--box_subtitleActionRegistration{
+    /* width: 94%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0 20px 0;
+}
+
+.box_subtitleActionRegistration--txt_itenRegister {
+    border-style: solid;
+    border-color: #1ABC9C;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.form--box_information {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input {
+    height: 15%;
+    font-size: 15px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+.box_information--box_numberphone {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+.main--slide_section {
+    width: 50%;
+}
