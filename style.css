@@ -19,7 +19,7 @@ h3 {
     margin: 0;
 }
 
-.main--registration {
+.main--registration, .main--login {
     width: 35%;
     height: 80%;
     padding: 27px;
@@ -27,8 +27,11 @@ h3 {
     box-shadow: 0px 0px 10px 0.5px #3333331F;
     background-color: #FFF;
 }
+.main--login {
+    display: none;
+}
 
-.registration--box_img {
+.registration--box_img, .login--box_img {
     margin: 0 0 20px 0;
 }
 
@@ -36,7 +39,6 @@ h3 {
     width: 40%;
 }
 
-.registration--box_subtitle {}
 
 .box_subtitle--subtitle_iten {
     color: #333333;
@@ -46,19 +48,27 @@ h3 {
     color: #1ABC9C;
 }
 
-.registration--form {
+.registration--form, .login--form {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login--form {
     height: 50%;
 }
 
-.form--box_subtitleActionRegistration{
-    /* width: 94%; */
+.form--box_subtitleActionRegistration, .form--box_subtitleActionLogin {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 30px 0 20px 0;
+    margin: 25px 0 15px 0;
+}
+.form--box_subtitleActionLogin  {
+    margin: 8px 0 15px 0;
 }
 
-.box_subtitleActionRegistration--txt_itenRegister {
+.box_subtitleActionRegistration--txt_itenRegister, .box_subtitleActionLogin--txt_login{
     border-style: solid;
     border-color: #1ABC9C;
     border-top: none;
@@ -67,15 +77,49 @@ h3 {
 }
 
 .form--box_information {
-    height: 70%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 15px;
+}
+.form--box_informationLogin {
+    height: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 input {
-    height: 15%;
+    height: 20%;
     font-size: 15px;
+    border-radius: 5px;
+    border-color: #C4C4C4;
+    border: none;
+    box-shadow: 0 0 1px .5px #C4C4C4;
+    padding-left: 10px;
+}
+
+.inpuiLogin{
+    height: 41%;
+}
+
+.box_information--box_numberphone {
+    height: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box_numberphone--codeRegion {
+    width: 20%;
+    height: 100%;
+}
+
+.box_numberphone--numberphone {
+    width: 70%;
+    height: 100%;
 }
 
 input[type=number]::-webkit-inner-spin-button { 
@@ -86,17 +130,45 @@ input[type=number] {
    appearance: textfield;
 }
 
-.box_information--box_numberphone {
-    display: flex;
-    flex-direction: row;
+a{
+    text-decoration: none;
 }
 
-
-
-
-
-
+.form--btnRegister, .form--btnLogin{
+    width: 40%;
+    height: 18%;
+    align-self: center;
+    margin-top: 10px;
+    color: #FFF;
+    background-color: #1ABC9C;
+    border-radius: 8px;
+    border: none
+}
+.form--btnLogin {
+    width: 30%;
+    height: 13%;
+    margin-top: 20px;
+}
 
 .main--slide_section {
     width: 50%;
+}
+
+.slide_section--box_imgslide {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.box_imgslide--iten {
+    width: 85%;
+}
+
+
+.transição1 {
+    transform:translate(-260px);
+    animation: transform 2s;
+}
+.transição2 {
+    transform:translate(260px);
 }
