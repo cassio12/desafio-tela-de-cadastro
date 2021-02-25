@@ -7,7 +7,7 @@
     </head>
     <body>
         <main>
-            <section id="registerSection" class="main--registration">
+            <section class="main--registration">
                 <figure class="registration--box_img">
                     <img class="box_img--iten" src="./assets/logo.svg"/>
                 </figure>
@@ -19,54 +19,41 @@
                 <form class="registration--form" method="POST">
                     <div class="form--box_subtitleActionRegistration">
                         <div class="box_animation">
-                            <h3 class="box_subtitleActionRegistration--txt_itenRegister">Cadastro</h3>
-                            <label class="direction_page"></label>
+                            <h3 id='register' class="box_subtitleActionRegistration--txt_itenRegister">Cadastro</h3>
+                            <h3 id="login" class="box_subtitleActionRegistration--txt_login">Login</h3>
                         </div>
-                        <h3 id="login" class="box_subtitleActionRegistration--txt_login">Login</h3>
+                        <label id="line_animetion" class="direction_page_register"></label>
                     </div>
-                    <div class="form--box_information">
-                        <input type="text" placeholder="Nome da Escola" required/>
-                        <input type="email" placeholder="Seu e-mail" required/>
-                        <input type="password" placeholder="Crie uma senha" required/>
-                        <div class="box_information--box_numberphone">
-                            <input class="box_numberphone--codeRegion" type="number" placeholder="+55" required/>
-                            <input class="box_numberphone--numberphone" type="number" placeholder="00 00000-0000" required/>
+                    <div class="form--screen_organisition">
+                        <div id="registerSection" class="form--box_informationRegister">
+                            <input type="text" placeholder="Nome da Escola" required/>
+                            <input type="email" placeholder="Seu e-mail" required/>
+                            <input type="password" placeholder="Crie uma senha" required/>
+                            <div class="box_information--box_numberphone">
+                                <input class="box_numberphone--codeRegion" type="number" placeholder="+55" required/>
+                                <input class="box_numberphone--numberphone" type="number" placeholder="00 00000-0000" required/>
+                            </div>
+                            <button class="form--btnRegister">Cadastrar</button>
+                        </div>
+                        <div id="loginSection" class="form--box_informationLogin">
+                            <input class="box_informationLogin--emailInput inpuiLogin" type="email" placeholder="E-mail" required/>
+                            <input class="box_informationLogin--passwordInput inpuiLogin" type="password" placeholder="Senha" required/>
+                            <a href="#">
+                                <label>Esqueci minha senha</label>
+                            </a>
+                            <button class="form--btnLogin">Login</button>
                         </div>
                     </div>
-                    <button class="form--btnRegister">Cadastrar</button>
-                </form>
-            </section>
-            <section id="loginSection" class="main--login">
-                <figure class="login--box_img">
-                    <img class="box_img--iten" src="./assets/logo.svg"/>
-                </figure>
-                <div class="login--box_subtitle">
-                    <h3 class="box_subtitle--subtitle_iten">Seja bem vindo(a) ao</h3>  
-                    <h3 class="box_subtitle--text_iten">Coursify.Me Enterprise</h3>
-                </div>
-                <p class="login--presentation_text">Although the bobcat is rarely seen, it is the most common wildcat in North America.</p>
-                <form class="login--form" method="POST">
-                    <div class="form--box_subtitleActionLogin">
-                        <div id="loginTransform" class="box_animation">
-                            <h3 class="box_subtitleActionLogin--txt_login">Login</h3>
-                            <label id="line_animetion" class="direction_page"></label>
-                        </div>
-                        <h3 id="register" class="box_subtitleActionLogin--txt_itenRegister">Cadastro</h3>
-                    </div>
-                    <div class="form--box_informationLogin">
-                        <input class="box_informationLogin--emailInput inpuiLogin" type="email" placeholder="E-mail" required/>
-                        <input class="box_informationLogin--passwordInput inpuiLogin" type="password" placeholder="Senha" required/>
-                    </div>
-                    <a href="#">
-                        <label>Esqueci minha senha</label>
-                    </a>
-                    <button class="form--btnLogin">Login</button>
                 </form>
             </section>
             <section class="main--slide_section">
                 <figure class="slide_section--box_imgslide">
-                    <img class="box_imgslide--iten" src="./assets/image_01.svg"/>
+                    <img id="imgSlide" class="box_imgslide--iten" src="./assets/image_01.svg"/>
                 </figure>
+                <div class="box_conterSlide">
+                    <div id="firstCircle" class="selectCircle "></div>
+                    <div id="secondCircle" class="unselectCircle"></div>
+                </div>
             </section>
         </main>
 
