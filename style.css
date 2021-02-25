@@ -3,6 +3,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -187,7 +188,7 @@ a {
 }
 
 .direction_page_register {
-    width: 20%;
+    width: 22%;
     height: 3px;
     background-color: #1ABC9C;
     border-radius: 5px;
