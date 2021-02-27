@@ -18,8 +18,11 @@ let main = () => {
         if (screenLogin.style.display === 'none'){
             screenLogin.style.display = 'flex'
             screenregister.style.display = 'none'
-            keyLogin.setAttribute('class', 'transicao1')
-            keyRegister.setAttribute('class', 'transicao2')
+            console.log(keyRegister.classList)
+            keyLogin.classList.add('move')
+            keyRegister.classList.add('move')
+            keyRegister.style.opacity = '.5'
+            keyLogin.style.opacity = '1'
             lineAnimetion.setAttribute('class', 'direction_page_login')
         } else {
             return null
@@ -28,10 +31,12 @@ let main = () => {
 
     keyRegister.addEventListener('click', () => {
         if (screenregister.style.display === 'none'){
+            keyLogin.style.opacity = '.5'
+            keyRegister.style.opacity = '1'
+            keyLogin.classList.remove('move')
+            keyRegister.classList.remove('move')
             screenregister.style.display = 'flex'
             screenLogin.style.display = 'none'
-            keyLogin.setAttribute('class', 'transicao2')
-            keyRegister.setAttribute('class', 'transicao1')
             lineAnimetion.setAttribute('class', 'direction_page_register')
         } else {
             return null

@@ -20,7 +20,7 @@ h3 {
     margin: 0;
 }
 
-.main--registration, .main--login {
+.main--registration {
     width: 35%;
     height: 80%;
     padding: 27px;
@@ -28,11 +28,8 @@ h3 {
     box-shadow: 0px 0px 10px 0.5px #3333331F;
     background-color: #FFF;
 }
-.main--login {
-    display: none;
-}
 
-.registration--box_img, .login--box_img {
+.registration--box_img {
     margin: 0 0 20px 0;
 }
 
@@ -56,33 +53,40 @@ h3 {
     color: #1ABC9C;
 }
 
-.registration--form, .login--form {
+.registration--form {
     height: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.login--form {
-    height: 50%;
-}
 
-.form--box_subtitleActionRegistration, .form--box_subtitleActionLogin {
+.form--box_subtitleActionRegistration {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 25px 0 15px 0;
 }
-.form--box_subtitleActionLogin  {
-    margin: 8px 0 15px 0;
-}
 
 #register, #login{
     cursor: pointer;
 }
-.box_subtitleActionRegistration--txt_login {
-    opacity: .5;
+
+.box_subtitleActionRegistration--txt_itenRegister {
+    transform: translate(0px, 0px);
+    transition: transform 1000ms;
+}
+.box_subtitleActionRegistration--txt_itenRegister.move{
+    transform: translate(315px, 0px);
 }
 
+.box_subtitleActionRegistration--txt_login {
+    opacity: .5;
+    transform: translate(0, 0);
+    transition: transform 1000ms;
+}
+.box_subtitleActionRegistration--txt_login.move {
+    transform: translate(-345px, 0px);
+}
 .form--box_informationRegister {
     height: 90%;
     display: flex;
@@ -90,6 +94,7 @@ h3 {
     justify-content: space-between;
     margin-bottom: 15px;
 }
+
 .form--box_informationLogin {
     display: flex;
     height: 70%;
@@ -151,6 +156,7 @@ a {
     border-radius: 8px;
     border: none
 }
+
 .form--btnLogin {
     width: 30%;
     height: 24%;
@@ -179,8 +185,6 @@ a {
     width: 85%;
 }
 
-
-
 .box_animation {
     display: flex;
     flex-direction: row;
@@ -194,6 +198,7 @@ a {
     border-radius: 5px;
     transition: width 2s;
 }
+
 .direction_page_login {
     width: 14%;
     height: 3px;
@@ -201,28 +206,6 @@ a {
     border-radius: 5px;
     transition: width 2s;
 }
-
-.transicao1 {
-    display: flex;
-    flex-direction: column;
-    animation: moveum 2s forwards ;
-}
-.transicao2 {
-    opacity: .5;
-    animation: movedois 2s forwards ;
-}
-
-
-@keyframes moveum {
-    from {transform:translateX(0px);}
-    to {transform:translateX(-345px);}
-}
-
-@keyframes movedois {
-    from {transform:translateX(0px);}
-    to {transform:translateX(315px);}
-}
-
 
 /* slide */
 
